@@ -2,7 +2,7 @@
 
 .container
 {
-    height:120vh;
+    height:150vh;
     display:flex;
     flex-wrap: wrap;
     background-color: $bgc-color;
@@ -75,18 +75,27 @@
         
     }
 
-    &__content
+    &__musicHolder
     {
         flex-basis: 100%;
         background-color: $secBgc-color;
         display:flex;
+        justify-content: space-around;
+
+    
+    &__content
+    {
+        height:100%;
+        flex-basis: 60%;
+        background-color: $secBgc-color;
+        display:flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
 
         &__holder
         {
-            margin:1em;
+            margin:2em;
             position: relative;
             width:15vw;
             height:15vw;
@@ -115,10 +124,10 @@
                 &::before
                 {
                     position: absolute;
-                    top:-30%;
+                    top:-10%;
                     content: '';
                     width:10px;
-                    height:100px;
+                    height:80px;
                     background-color: $secBgc-color;
                 }
                 &::after
@@ -164,23 +173,81 @@
     }
 }
 
-.wave {
+&__footer
+{
+    flex-basis: 100%;
+    display:flex;
+    justify-content: flex-end;
+
+    &__media
+    {
+        flex-basis: 75%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        & a
+        {
+            margin:2.5em;
+        }
+        &__logo
+        {
+            width:90px;
+        }
+    }
+
+    &__copyright
+    {
+        flex-basis:10%;
+        display:flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right:1em;
+    }
+}
+
+}
+
+.waveTop  {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    & svg
+    {
+        position: relative;
+        display: block;
+        width: calc(144% + 1.3px);
+        height: 200px;
+    }
+    & .shape-fill
+    {
+        fill: $bgc-color;
+    }
+
 }
 
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(144% + 1.3px);
-    height: 200px;
+.waveBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    & svg {
+        position: relative;
+        display: block;
+        width: calc(110% + 1.3px);
+        height: 76px;
+    }
+
+    & .shape-fill {
+        fill: $bgc-color;
+    }
 }
 
-.wave .shape-fill {
-    fill: $bgc-color;
-}
+
 

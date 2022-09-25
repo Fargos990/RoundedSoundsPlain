@@ -7,7 +7,7 @@
 }
 
 .container {
-  height: 120vh;
+  height: 150vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,9 +96,21 @@
   background-color: #E8A0BF;
 }
 
-.container__content {
+.container__musicHolder {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  background-color: #E8A0BF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container__musicHolder__content {
+  height: 100%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   background-color: #E8A0BF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,13 +120,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.container__content__holder {
-  margin: 1em;
+.container__musicHolder__content__holder {
+  margin: 2em;
   position: relative;
   width: 15vw;
   height: 15vw;
@@ -122,7 +134,7 @@
   background-color: #FCC5C0;
 }
 
-.container__content__holder__frame {
+.container__musicHolder__content__holder__frame {
   background-color: #E8A0BF;
   width: 130px;
   height: 130px;
@@ -135,7 +147,7 @@
   top: 7%;
 }
 
-.container__content__holder__frame__image {
+.container__musicHolder__content__holder__frame__image {
   border-radius: 50%;
   width: 110px;
   position: relative;
@@ -143,16 +155,16 @@
   top: 8%;
 }
 
-.container__content__holder__frame::before {
+.container__musicHolder__content__holder__frame::before {
   position: absolute;
-  top: -30%;
+  top: -10%;
   content: '';
   width: 10px;
-  height: 100px;
+  height: 80px;
   background-color: #E8A0BF;
 }
 
-.container__content__holder__frame::after {
+.container__musicHolder__content__holder__frame::after {
   position: absolute;
   bottom: -100%;
   right: -0.5%;
@@ -162,7 +174,7 @@
   background-color: #E8A0BF;
 }
 
-.container__content__holder__title {
+.container__musicHolder__content__holder__title {
   text-align: center;
   width: 10vw;
   position: absolute;
@@ -175,7 +187,7 @@
   font-size: 1.1em;
 }
 
-.container__content__holder__author {
+.container__musicHolder__content__holder__author {
   text-align: center;
   width: 10vw;
   position: absolute;
@@ -188,7 +200,55 @@
   font-size: 1.2em;
 }
 
-.wave {
+.container__footer {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container__footer__media {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__footer__media a {
+  margin: 2.5em;
+}
+
+.container__footer__media__logo {
+  width: 90px;
+}
+
+.container__footer__copyright {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 1em;
+}
+
+.waveTop {
   position: absolute;
   top: 0;
   left: 0;
@@ -197,14 +257,36 @@
   line-height: 0;
 }
 
-.wave svg {
+.waveTop svg {
   position: relative;
   display: block;
   width: calc(144% + 1.3px);
   height: 200px;
 }
 
-.wave .shape-fill {
+.waveTop .shape-fill {
+  fill: #937DC2;
+}
+
+.waveBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.waveBottom svg {
+  position: relative;
+  display: block;
+  width: calc(110% + 1.3px);
+  height: 76px;
+}
+
+.waveBottom .shape-fill {
   fill: #937DC2;
 }
 /*# sourceMappingURL=index.css.map */
