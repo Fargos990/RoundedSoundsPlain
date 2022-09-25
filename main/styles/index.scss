@@ -112,6 +112,25 @@
                     top:8%;
 
                 }
+                &::before
+                {
+                    position: absolute;
+                    top:-30%;
+                    content: '';
+                    width:10px;
+                    height:100px;
+                    background-color: $secBgc-color;
+                }
+                &::after
+                {
+                    position: absolute;
+                    bottom:-100%;
+                    right:-0.5%;
+                    content: '';
+                    width:10px;
+                    height:200px;
+                    background-color: $secBgc-color;
+                }
                 
             }
             &__title

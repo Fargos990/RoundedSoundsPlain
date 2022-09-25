@@ -143,6 +143,25 @@
   top: 8%;
 }
 
+.container__content__holder__frame::before {
+  position: absolute;
+  top: -30%;
+  content: '';
+  width: 10px;
+  height: 100px;
+  background-color: #E8A0BF;
+}
+
+.container__content__holder__frame::after {
+  position: absolute;
+  bottom: -100%;
+  right: -0.5%;
+  content: '';
+  width: 10px;
+  height: 200px;
+  background-color: #E8A0BF;
+}
+
 .container__content__holder__title {
   text-align: center;
   width: 10vw;
