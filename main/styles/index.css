@@ -176,7 +176,7 @@
 
 .container__musicHolder__content__holder__title {
   text-align: center;
-  width: 10vw;
+  width: 13vw;
   position: absolute;
   position: absolute;
   margin-left: auto;
@@ -184,7 +184,7 @@
   left: 0;
   right: 0;
   top: 55%;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .container__musicHolder__content__holder__author {
