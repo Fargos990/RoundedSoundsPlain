@@ -1,14 +1,44 @@
-const app = () =>
-{
-    const CLIENT_ID = 'f4fadefe8da54c0a9e8831a590bd3214'
-    const REDIRECT_URI = 'http://127.0.0.1:5500/'
-    const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize'
-    const RESPONSE_TYPE = 'token'
+const apiKey = 'YTY2MzAyN2EtMjNlMi00OTFmLTk4NGItZTMxY2Y4MGQzMGVm'
+const images = document.getElementsByClassName("container__musicHolder__content__holder__frame__image");
 
-    const loginButton = document.createElement("a");
-    loginButton.innerText = "Login"
-    loginButton.href = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`;
-    document.getElementsByClassName('container')[0].appendChild(loginButton);
+let dataTab = [];
+
+const app = async() =>
+{
+
+    const response = await fetch(`https://api.napster.com/v2.2/tracks/top?apikey=${apiKey}&limit=6`,
+    {
+        method:"GET"
+    })
+
+    const data = await response.json();
+    dataTab = await [...data.tracks];
+    console.log(dataTab)
+    getPhoto(dataTab);
+
+}
+
+const getPhoto = async(dataTab)=>
+{
+    let i = 0;
+    let photosW = []
+    dataTab.map(async(elem)=>
+    {
+        const response = await fetch(`https://api.napster.com/v2.2/albums/${elem.albumId}/images?apikey=${apiKey}`,
+        {
+            method:"GET"
+        })
+        const data = await response.json();
+        //images[i].src = data.images[Math.floor(Math.random() * data.images.length )];
+        console.log(data.images[2].url);
+        i++;
+    })
+    
+    
+    
 }
 
 app();
+
+
+
