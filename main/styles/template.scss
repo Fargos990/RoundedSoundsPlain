@@ -1,0 +1,10 @@
+@import "../styles/main.scss";
+.container
+{
+    &__wave
+    {
+        flex-basis: 100%;
+        position: relative;
+        background-color: $secBgc-color;
+    }
+}

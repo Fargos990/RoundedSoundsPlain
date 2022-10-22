@@ -17,12 +17,12 @@ const searchForMusic = (searchFor) =>
     {
         response.json().then((data)=>
         {
-            console.log(data.results.trackmatches.track[0]);
+            //console.log(data.results.trackmatches.track[0]);
         })
     })
 }
 
-const getTopCountryTracks =(countryName)=>
+const getTopCountryTracks = (countryName)=>
 {
     
     fetch(`${LINK}/2.0/?method=geo.gettoptracks&country=${countryName}&api_key=${API_KEY}&format=json&limit=6`).then((response)=>
@@ -37,6 +37,8 @@ const getTopCountryTracks =(countryName)=>
                 holders[i].children[2].innerHTML = data.tracks.track[i].artist.name;
                 
             }
+            localStorage.setItem('topTracks',JSON.stringify(data.tracks.track));
+            
         })
     })
 }
@@ -45,6 +47,11 @@ app();
 
 //searchForMusic(searchQuery);
 getTopCountryTracks('poland');
+
+function whichElement(index)
+{
+    localStorage.setItem("indexOfItem",JSON.stringify(index));
+}
 
 
 

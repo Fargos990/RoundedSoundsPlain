@@ -2,59 +2,11 @@
 
 .container
 {
-    height:150vh;
-    display:flex;
-    flex-wrap: wrap;
-    background-color: $bgc-color;
     &__header
     {
-        height:200px;
-        flex-basis: 100%;
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        &__logo
-        {
-            flex-basis: 20%;
-            display:flex;
-            justify-content: center;
-            
-        }
-        &__menu
-        {
-            flex-basis:50%;
-            margin-right:20%;
-            &__list
-            {
-                
-                list-style: none;
-                text-decoration: none;
-                height:100%;
-                width:100%;
-                display:flex;
-                justify-content: space-around;
-                align-items: center;
-            
-                &__element
-                {
-                    
-                    display:block;
-                    font-size:2em;
-                
-                    &__link
-                    {
-
-                        text-decoration: none;
-                    }
-                }
-            }
-            
-        }
-    
         &__paragraph
         {
 
-            
             flex-basis: 100%;
             display:flex;
             justify-content: center;
@@ -66,13 +18,6 @@
             }
 
         }
-    }
-    &__wave
-    {
-        flex-basis: 100%;
-        position: relative;
-        background-color: $secBgc-color;
-        
     }
 
     &__musicHolder
@@ -207,47 +152,7 @@
 
 }
 
-.waveTop  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    & svg
-    {
-        position: relative;
-        display: block;
-        width: calc(144% + 1.3px);
-        height: 200px;
-    }
-    & .shape-fill
-    {
-        fill: $bgc-color;
-    }
 
-}
-
-.waveBottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-
-    & svg {
-        position: relative;
-        display: block;
-        width: calc(110% + 1.3px);
-        height: 76px;
-    }
-
-    & .shape-fill {
-        fill: $bgc-color;
-    }
-}
 
 
 
