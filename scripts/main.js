@@ -1,4 +1,4 @@
-//Zmienne stale
+//Stale
 const API_KEY = '92b82c4c86b97fc11d5eea3c5f3e51fe'
 const LINK = 'https://ws.audioscrobbler.com/';
 
