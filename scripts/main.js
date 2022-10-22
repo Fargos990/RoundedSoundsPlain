@@ -6,11 +6,6 @@ const holders = document.getElementsByClassName("container__musicHolder__content
 let dataTab = [];
 let searchQuery = 'painted dreams'
 
-const app = ()=>
-{
-
-}
-
 const searchForMusic = (searchFor) =>
 {
     fetch(`${LINK}/2.0/?method=track.search&track=${searchFor}&api_key=${API_KEY}&format=json&limit=1`).then((response)=>
@@ -42,9 +37,6 @@ const getTopCountryTracks = (countryName)=>
         })
     })
 }
-
-app();
-
 //searchForMusic(searchQuery);
 getTopCountryTracks('poland');
 
