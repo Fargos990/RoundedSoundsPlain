@@ -1,2 +1,6 @@
 # RoundedSoundsPlain
-In this project i will be using only plain js.
+Rounded Sounds pokaze ci 6 najbardziej aktualnie popularnych piosenek w Polsce.
+# Zalozenia:
+-Mozliwosc zobaczenia najbardziej popularnych piosnek w polsce
+-Mozliwosc zobaczenia tekstów piosenki
+
