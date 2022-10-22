@@ -9,18 +9,6 @@ const holders = document.getElementsByClassName("container__musicHolder__content
 let dataTab = [];
 let searchQuery = 'painted dreams'
 
-//Szukanie muzyki na podstawie tytulu
-const searchForMusic = (searchFor) =>
-{
-    fetch(`${LINK}/2.0/?method=track.search&track=${searchFor}&api_key=${API_KEY}&format=json&limit=1`).then((response)=>
-    {
-        response.json().then((data)=>
-        {
-            //console.log(data.results.trackmatches.track[0]);
-        })
-    })
-}
-
 //Szukanie muzyki na podstawie panstaw
 const getTopCountryTracks = (countryName)=>
 {

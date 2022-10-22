@@ -177,4 +177,188 @@
   position: relative;
   background-color: #E8A0BF;
 }
+
+.container__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E8A0BF;
+}
+
+.container__holder__form {
+  margin-top: 10em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__holder__form__label {
+  font-size: 2em;
+  margin: 1em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.container__holder__form__label__input {
+  font-size: 15px;
+  margin-left: 1em;
+  color: black;
+  height: 25px;
+  width: 300px;
+  border-radius: 3em;
+  padding: 1.3em;
+  outline: none;
+}
+
+.container__holder__form__submitH {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.container__holder__form__submitH__submit {
+  width: 100%;
+  font-size: 1.3em;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 3em;
+  cursor: pointer;
+  color: black;
+}
+
+.container__holder__content {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #E8A0BF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container__holder__content__block {
+  height: 100%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  background-color: #E8A0BF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container__holder__content__block__music {
+  margin: 2em;
+  position: relative;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50%;
+  background-color: #FCC5C0;
+}
+
+.container__holder__content__block__music__frame {
+  background-color: #E8A0BF;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 7%;
+}
+
+.container__holder__content__block__music__frame__image {
+  border-radius: 50%;
+  width: 160px;
+  position: relative;
+  left: 10%;
+  top: 10%;
+}
+
+.container__holder__content__block__music__frame::before {
+  position: absolute;
+  top: -10%;
+  content: '';
+  width: 10px;
+  height: 120px;
+  background-color: #E8A0BF;
+}
+
+.container__holder__content__block__music__frame::after {
+  position: absolute;
+  bottom: -100%;
+  right: 0.5%;
+  content: '';
+  width: 10px;
+  height: 290px;
+  background-color: #E8A0BF;
+}
+
+.container__holder__content__block__music__title {
+  text-align: center;
+  width: 20vw;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 55%;
+  font-size: 1.7em;
+}
+
+.container__holder__content__block__music__author {
+  text-align: center;
+  width: 17vw;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 70%;
+  font-size: 1.5em;
+}
+
+.container__holder__content__block__music > a {
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  width: 13vw;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 80%;
+}
 /*# sourceMappingURL=search.css.map */

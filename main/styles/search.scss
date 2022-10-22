@@ -7,5 +7,162 @@
     position: relative;
     background-color: $secBgc-color;
     }
-    
+    &__holder
+    {
+        display:flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: $secBgc-color;
+        &__form
+        {
+            margin-top:10em;
+            flex-basis:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &__label
+            {
+                font-size:2em;
+                margin:1em;
+                flex-basis: 100%;
+                &__input
+                {
+                    font-size:15px;
+                    margin-left:1em;
+                    color:black;
+                    height:25px;
+                    width:300px;
+                    border-radius: 3em;
+                    padding:1.3em;
+                    outline:none;
+
+                }
+            }
+            &__submitH
+            {
+                flex-basis: 100%;
+                
+                &__submit
+                {
+                    width:100%;
+                    font-size:1.3em;
+                    padding:1em;
+                    margin:1em;
+                    border-radius: 3em;
+                    cursor: pointer;
+                    color:black;
+                }
+            }
+        }
+        &__content
+        {
+            flex-basis: 100%;
+            background-color: $secBgc-color;
+            display:flex;
+            justify-content: space-around;
+            &__block
+            {
+                height:100%;
+                flex-basis: 60%;
+                background-color: $secBgc-color;
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-end;
+                &__music
+                {
+                    margin:2em;
+                    position: relative;
+                    width:22vw;
+                    height:22vw;
+                    border-radius: 50%;
+                    background-color: $content-color;
+                    &__frame
+                    {
+                        
+                        background-color: $secBgc-color;
+                        width:200px;
+                        height:200px;
+                        border-radius: 50%;
+                        position: absolute;
+                        margin-left:auto;
+                        margin-right:auto;
+                        left:0;
+                        right:0;
+                        top:7%;
+                        &__image
+                        {
+                            border-radius: 50%;
+                            width:160px;
+                            position: relative;
+                            left:10%;
+                            top:10%;
+                        }
+                        &::before
+                        {
+                            position: absolute;
+                            top:-10%;
+                            content: '';
+                            width:10px;
+                            height:120px;
+                            background-color: $secBgc-color;
+                        }
+                        &::after
+                        {
+                            position: absolute;
+                            bottom:-100%;
+                            right:0.5%;
+                            content: '';
+                            width:10px;
+                            height:290px;
+                            background-color: $secBgc-color;
+                        }
+                    }
+                    &__title
+                    {
+                        text-align: center;
+                        width:20vw;
+                        position: absolute;
+                        margin-left:auto;
+                        margin-right:auto;
+                        left:0;
+                        right:0;
+                        top:55%;
+                        font-size:1.7em;
+                    }
+                    &__author
+                    {
+                        text-align: center;
+                        width:17vw;
+                        position: absolute;
+                        margin-left:auto;
+                        margin-right:auto;
+                        left:0;
+                        right:0;
+                        top:70%;
+                        font-size:1.5em;
+                    }
+                    &>a
+                    {
+                        font-size:1em;
+                        text-decoration: none;
+                        text-align: center;
+                        width:13vw;
+                        position: absolute;
+                        margin-left:auto;
+                        margin-right:auto;
+                        left:0;
+                        right:0;
+                        top:80%;
+                    }
+
+
+                }
+            }
+        }
+    }
 }
