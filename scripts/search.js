@@ -32,7 +32,7 @@ const createSongHolder = (song) =>
     titleHolder.className = 'container__holder__content__block__music__title'
     titleHolder.appendChild(title);
 
-    const imageHolder = document.createElement('div')
+    const imageHolder = document.createElement('figure')
     imageHolder.className = 'container__holder__content__block__music__frame'
     imageHolder.appendChild(image);
 
