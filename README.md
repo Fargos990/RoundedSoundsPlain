@@ -2,7 +2,7 @@
 Rounded Sounds pokaze ci 6 najbardziej aktualnie popularnych piosenek w Polsce.
 # Zalozenia:
 
--Pobiera dane piosnek z API last FM
+-Pobiera dane piosenek z API last FM
 
 -Mozliwosc zobaczenia najbardziej popularnych piosnek w polsce
 
