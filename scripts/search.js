@@ -19,7 +19,7 @@ const createSongHolder = (song) =>
     const title = document.createElement('h2')
     title.innerHTML = song.name
     
-    const author = document.createElement('div')
+    const author = document.createElement('p')
     author.innerHTML = song.artist;
     author.className = 'container__holder__content__block__music__author'
 
@@ -28,7 +28,7 @@ const createSongHolder = (song) =>
     image.src = `https://picsum.photos/seed/${song.artist}/110`
     image.alt = 'thumbnail'
 
-    const titleHolder = document.createElement('div');
+    const titleHolder = document.createElement('p');
     titleHolder.className = 'container__holder__content__block__music__title'
     titleHolder.appendChild(title);
 
@@ -36,14 +36,14 @@ const createSongHolder = (song) =>
     imageHolder.className = 'container__holder__content__block__music__frame'
     imageHolder.appendChild(image);
 
-    const musicBlock = document.createElement('div')
+    const musicBlock = document.createElement('section')
     musicBlock.className = 'container__holder__content__block__music'
     musicBlock.appendChild(imageHolder);
     musicBlock.appendChild(titleHolder)
     musicBlock.appendChild(author)
     musicBlock.appendChild(a)
 
-    const block = document.createElement('div')
+    const block = document.createElement('section')
     block.className = 'container__holder__content__block'
     block.appendChild(musicBlock);
 
