@@ -331,4 +331,28 @@
 .container__musicHolder__lyrics__container::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.container__timeHolder {
+  font-size: 9em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #E8A0BF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__clock .container__date {
+  padding: 3em;
+}
 /*# sourceMappingURL=time_date.css.map */

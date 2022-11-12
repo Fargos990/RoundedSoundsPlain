@@ -1,1 +1,22 @@
-@import "../styles/template.scss"
+@import "../styles/template.scss";
+
+.container
+{
+    &__timeHolder
+    {
+        font-size:9em;
+        flex-basis: 100%;
+        background-color: $secBgc-color;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__clock &__date
+    {
+        padding:3em;
+
+    }
+
+}
