@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Contact developers">
-    <title>Search For</title>
-    <link rel="stylesheet" href="../../styles/search.css">
+    <meta name="description" content="">
+    <title>Song</title>
+    <link rel="stylesheet" href="../../styles/time_date.css">
     <link rel="icon" href="../../../images/Logo_White.png">
 </head>
 <body>
@@ -29,7 +29,7 @@
                     </li>
 
                     <li class="container__header__menu__list__element">
-                        <a href="searchfor.html" class="container__header__menu__list__element__link">Search For</a>
+                        <a href="../music_pages/searchfor.html" class="container__header__menu__list__element__link">Search For</a>
                     </li>
 
                 </ul>
@@ -48,40 +48,29 @@
 
         </aside>
 
-        <main class="container__holder">
-            <form method="post" class="container__holder__form" id="form">
-
-                <label for="artist" class="container__holder__form__label">Artist
-                    <input type="text" name="artist" id="artist" class="container__holder__form__label__input">
-                </label>
-
-                <label for="title" class="container__holder__form__label">Title
-                    <input type="text" name="title" id="title" class="container__holder__form__label__input">
-                </label>
-
-                <div class="container__holder__form__submitH">
-                    <input type="submit" value="Search" class="container__holder__form__submitH__submit">
-                </div>
-            </form>
-
-            <section class="container__holder__content">
-
-
+        <main class="container__musicHolder">
+            <section class="container__musicHolder__clock">
+                <p class="container__musicHolder__clock__paragraph" id="clock">00:00:00</p>
             </section>
 
-
+            <section class="container__musicHolder__date">
+                <p class="container__musicHolder__date__paragraph" id="date">00-00-0000</p>
+            </section>
         </main>
 
-    <aside class="container__wave">
 
-        <div class="waveBottom">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        
 
-    </aside>
+        <aside class="container__wave">
+
+            <div class="waveBottom">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            
+    
+        </aside>
+    
 
     <footer class="container__footer">
         <aside class="container__footer__media">
@@ -98,8 +87,6 @@
 
         
     </section>
-    
-    <script src="../../../scripts/search.js"></script>
+    <script src="../../../scripts/time_date.js"></script>
 </body>
 </html>
-    
