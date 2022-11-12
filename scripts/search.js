@@ -1,4 +1,4 @@
-//Stale
+//stale
 const form = document.getElementById('form');
 const contentHolder = document.getElementsByClassName('container__holder__content')[0]
 const API_KEY = '92b82c4c86b97fc11d5eea3c5f3e51fe'
@@ -8,6 +8,11 @@ const LINK = 'https://ws.audioscrobbler.com/';
 let artist = '';
 let title = '';
 
+/**
+ * Tworzy blok znacznikow, ktorzy maja byc jako kontener dla elemntow piosenki
+ * 
+ * @param {string} piosenka przekazujemy z bezposrednio z api
+ */
 const createSongHolder = (song) =>
 {
     const a = document.createElement('a');
@@ -56,7 +61,12 @@ const createSongHolder = (song) =>
 }
 
 
-//szukanie muzyki po tytule
+/**
+ * Znajduje piosenke po tytule
+ * 
+ * 
+ * @param {string} searchFor wpisujemy tytul piosenki, ktorej szukamy 
+ */
 const searchForMusicByTitle = (searchFor) =>
 {
     fetch(`${LINK}/2.0/?method=track.search&track=${searchFor}&api_key=${API_KEY}&format=json&limit=1`).then((response)=>
@@ -71,7 +81,11 @@ const searchForMusicByTitle = (searchFor) =>
     })
 }
 
-//szukanie muzyki po autorze i tytule
+/**
+ * Znajduje piosenke po tytule jaki i autorze
+ * @param {string} searchFor wpisujemy tytul piosenki 
+ * @param {string} artist wpisujemy nazwe artysty
+ */
 const searchForMusicByTitleAndAuthor = (searchFor, artist) =>
 {
     fetch(`${LINK}/2.0/?method=track.search&track=${searchFor}&arist=${artist}&api_key=${API_KEY}&format=json&limit=1`).then((response)=>
@@ -99,7 +113,6 @@ form.addEventListener('submit',(e)=>
     
     if(document.getElementById('artist').value != '')
     {
-        console.log('hlao')
         searchForMusicByTitleAndAuthor(document.getElementById('title').value,document.getElementById('artist').value)
     }
     else

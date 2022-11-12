@@ -9,7 +9,12 @@ const holders = document.getElementsByClassName("container__musicHolder__content
 let dataTab = [];
 let searchQuery = 'painted dreams'
 
-//Szukanie muzyki na podstawie panstaw
+
+/**
+ * Szukanie muzyki na podstawie wpisanego panstwa
+ * 
+ * @param {*} countryName nazwa panstwa ktorego szukamy
+ */
 const getTopCountryTracks = (countryName)=>
 {
     
@@ -34,12 +39,17 @@ const getTopCountryTracks = (countryName)=>
         })
     })
 }
-//searchForMusic(searchQuery);
 
 //Wykonanie funkcji
 getTopCountryTracks('poland');
 
 //Zobacz index.html, chodzi o to zeby dostac index elemntu i zapisac go do pozniejszego uzytku w localstorage
+/**
+ * Zwraca indeks obiektu w tablicy
+ * 
+ * 
+ * @param {*} index indeks obiektu, na ktorym funkcja jest wywolywana 
+ */
 function whichElement(index)
 {
     localStorage.setItem("indexOfItem",JSON.stringify(index));

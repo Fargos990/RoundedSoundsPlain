@@ -1,7 +1,10 @@
 //dostanie elementu w ktorym beda wyswietlane dane piosenki
 const holders = document.getElementsByClassName("container__musicHolder__content__holder");
 
-const app = () =>
+/**
+ * Stworzenie obiektu, ktory bedzie przechowywac dane piosenki z local storage
+ */
+const createBox = () =>
 {
     //stworzenie zmiennych i dostanie index elementu i wszystkich top piosenek
     const index = JSON.parse(localStorage.getItem('indexOfItem'))
@@ -21,4 +24,4 @@ const app = () =>
     holders[0].appendChild(a);
     
 }
-app();
+createBox();
