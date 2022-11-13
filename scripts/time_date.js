@@ -18,5 +18,5 @@ const getTime = () =>
     })
 
 }
-getTime();
-//setInterval(getTime, 1000);
+//getTime();
+setInterval(getTime, 1000);
