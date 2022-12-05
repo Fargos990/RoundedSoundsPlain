@@ -7,8 +7,8 @@ const holders : HTMLCollection = document.getElementsByClassName("container__mus
 const createBox = () =>
 {
     //stworzenie zmiennych i dostanie index elementu i wszystkich top piosenek
-    const index = JSON.parse(localStorage.getItem('indexOfItem'))
-    const dataTab = [...JSON.parse(localStorage.getItem('topTracks'))];
+    const index : number = JSON.parse(localStorage.getItem('indexOfItem'))
+    const dataTab : object = [...JSON.parse(localStorage.getItem('topTracks'))];
 
     //Stworzenie a tagu, aby uzytkownik mogl sobie przejrzec dane piosenki
     const a : HTMLAnchorElement = document.createElement('a');
